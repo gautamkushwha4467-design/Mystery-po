@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Investigator's Notes - Confidential</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2c2c2c;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            font-family: 'Special Elite', system-ui;
+        }
+
+        .paper {
+            background-color: #f4ecd8;
+            background-image: 
+                radial-gradient(circle at 2px 2px, rgba(0,0,0,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+            width: 100%;
+            max-width: 800px;
+            min-height: 1000px;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 0 100px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #dcd3b6;
+        }
+
+        .paper::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        .coffee-stain {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 8px solid rgba(139, 69, 19, 0.1);
+            filter: blur(2px);
+            top: 10%;
+            right: -50px;
+            transform: rotate(15deg);
+        }
+
+        .handwritten {
+            font-family: 'Caveat', cursive;
+            color: #1a237e;
+            font-size: 1.4rem;
+            line-height: 1.2;
+        }
+
+        .typewritten {
+            font-family: 'Courier Prime', monospace;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .red-ink {
+            color: #b71c1c;
+            font-family: 'Caveat', cursive;
+            font-weight: bold;
+            transform: rotate(-2deg);
+            display: inline-block;
+        }
+
+        .folder-tab {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            background: #b71c1c;
+            color: white;
+            padding: 5px 20px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .stamped {
+            border: 4px double #b71c1c;
+            color: #b71c1c;
+            padding: 5px 15px;
+            display: inline-block;
+            transform: rotate(-15deg);
+            font-weight: bold;
+            opacity: 0.7;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px dashed rgba(0,0,0,0.2);
+            margin: 20px 0;
+        }
+
+        .clip {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 30px;
+            background: #aaa;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="paper">
+        <div class="clip"></div>
+        <div class="folder-tab">CASE #772-NKC</div>
+        <div class="coffee-stain"></div>
+
+        <div class="text-center mb-8">
+            <div class="stamped">CONFIDENTIAL</div>
+            <h1 class="text-3xl font-bold mb-2">🎭 NK COLLEGE MASQUERADE GALA</h1>
+            <p class="typewritten text-sm">Lead Investigator’s Personal Notes</p>
+            <p class="text-xs mt-1 italic">Authorized Personnel Only</p>
+        </div>
+
+        <section class="mb-8">
+            <h2 class="typewritten border-b border-gray-400 mb-4">🕒 Timeline Irregularities</h2>
+            <div class="handwritten space-y-2">
+                <p><strong>9:47 PM:</strong> Senior student seen near server corridor. <span class="red-ink ml-2">Check identification!</span></p>
+                <p><strong>9:52 PM:</strong> IT Administrator keycard logs entry into server room.</p>
+                <p><strong>9:54 PM:</strong> Brief secondary keycard ping recorded in same wing.</p>
+                <p><strong>10:01 PM:</strong> Corridor camera feed glitches for 47 seconds.</p>
+                <p><strong>10:02 PM:</strong> IT admin audio log ends abruptly.</p>
+                <p><strong>11:45 PM:</strong> First collapse during gala toast.</p>
+                <p><strong>~1:15 AM:</strong> Second collapse in administrative office.</p>
+                <p class="mt-4 italic underline decoration-red-500">The 47-second footage gap has been confirmed as manual deletion — not technical failure.</p>
+            </div>
+        </section>
+
+        <section class="mb-8 bg-black/5 p-4 rounded">
+            <h2 class="typewritten border-b border-gray-400 mb-4">🎥 CCTV Footage Review</h2>
+            <div class="handwritten">
+                <ul class="list-disc ml-6 space-y-2">
+                    <li>Camera 3 (Server Corridor): Timestamp distortion between 9:59–10:01 PM.</li>
+                    <li>Camera 5 (Faculty Lounge Hallway): Playback speed altered slightly — likely to conceal entry/exit timing.</li>
+                </ul>
+                <p class="mt-4 text-sm font-bold uppercase tracking-widest text-gray-700">Note: No forced access detected on editing console.</p>
+                <p class="red-ink mt-2">Only senior administrative and faculty accounts have access clearance to internal CCTV review systems.</p>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section>
+                <h2 class="typewritten border-b border-gray-400 mb-4">🖊 Missing Object</h2>
+                <div class="handwritten border-l-4 border-blue-800 pl-4">
+                    <p><strong>Item:</strong> Dark green fountain pen w/ silver trim.</p>
+                    <p><strong>Owner:</strong> Senior Faculty (Computer Science).</p>
+                    <p class="italic text-gray-600 text-sm">"Rare and custom engraved."</p>
+                    <p>Last seen: Faculty Lounge, 9:20 PM. Not recovered in sweep.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="typewritten border-b border-gray-400 mb-4">☕ Beverage Analysis</h2>
+                <div class="handwritten">
+                    <p>Botanical alkaloid detected in 2 samples.</p>
+                    <p class="text-sm">Derived from academic biochemical research plants. Controlled prep required.</p>
+                    <p class="red-ink underline">NOT COMMERCIALLY AVAILABLE.</p>
+                </div>
+            </section>
+        </div>
+
+        <hr>
+
+        <section class="mb-8">
+            <h2 class="typewritten border-b border-gray-400 mb-4">🔑 Keycard & Access</h2>
+            <div class="handwritten">
+                <p>Faculty-level card pinged server corridor @ 9:54 PM.</p>
+                <p>Owner claims they were in the lounge. <span class="underline">No witnesses confirm this after 9:30 PM.</span></p>
+                <p class="italic">Fact: This specific card has full CCTV viewing privileges.</p>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="typewritten border-b border-gray-400 mb-4">🧠 Language Patterns</h2>
+            <div class="handwritten bg-white/30 p-4 border border-dashed border-gray-400">
+                <p class="mb-2 italic">Witness statements regarding the suspect:</p>
+                <p>“Departments must survive in meaningful form.”</p>
+                <p>“Intervention becomes necessary.”</p>
+                <p>“I am calculating the long-term damage.”</p>
+                <p class="text-sm mt-2 font-bold">— Tone described as controlled. Not angry.</p>
+            </div>
+        </section>
+
+        <section class="mt-12 pt-8 border-t-2 border-red-900/20">
+            <h2 class="typewritten text-red-900 mb-4">🧩 CRITICAL OBSERVATION</h2>
+            <div class="handwritten text-xl">
+                <p>Server room floor near entrance: Faint ink mark — <span class="underline decoration-green-800 text-green-900 font-bold">DARK GREEN</span> — partially smudged.</p>
+                <p class="mt-2">Forensics confirms it came from a <strong>fountain pen</strong>, not a marker. Someone was writing (or struggling) inside the server room.</p>
+            </div>
+        </section>
+        
+        <div class="mt-20 flex justify-between items-end">
+            <div class="handwritten text-sm">
+                <p>Investigator: Det. V. Vance</p>
+                <p>Status: Active Investigation</p>
+            </div>
+            <div class="opacity-30 transform rotate-12 typewritten text-xs">
+                PROPERTY OF NKC SECURITY DEP.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
