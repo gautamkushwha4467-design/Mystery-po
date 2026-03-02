@@ -73,10 +73,24 @@
         </a>
     </div>
 
-    <a href="mystery.html" class="normal-button" target="_blank">
-        <button  class="btn info">Lets start</button>
-    </a>
+    <!-- Password Protected Button -->
+    <button class="info normal-button" onclick="checkPassword()">
+        Lets Start
+    </button>
+
+    <script>
+        function checkPassword() {
+            var password = prompt("Enter Password:");
+
+            if (password === "DAVINCI") {
+                window.location.href = "mystery.html";
+            } else {
+                alert("Incorrect Password!");
+            }
+        }
+    </script>
 </body>
 </html>
+
 
 
